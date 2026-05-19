@@ -6,6 +6,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/) and this 
 
 ## [Unreleased]
 
+## [0.1.2] — 2026-05-19
+
+### Added (CI / archival only — no API changes vs 0.1.1)
+
+- **First Zenodo-archived release.** The repo's GitHub-Zenodo integration was enabled after v0.1.1 had already shipped, so v0.1.0 and v0.1.1 did not auto-archive. v0.1.2 is the first release Zenodo's webhook picks up; the minted DOI becomes the canonical citation handle from this release forward.
+- README and CITATION.cff will be updated to surface the DOI badge + bibtex once the mint completes (separate commit, typically within a few minutes of this tag).
+
+### Notes
+
+This is a version-bump-only release. All public API, dependencies, tests, and behaviour are byte-equivalent to 0.1.1. Functionally identical; archivally distinct.
+
 ## [0.1.1] — 2026-05-19
 
 ### Added (CI only — no API changes vs 0.1.0)

@@ -9,7 +9,7 @@ type: software
 license: Apache-2.0
 repository-code: "https://github.com/Adonyth/omytea-quantum-substrate"
 url: "https://github.com/Adonyth/omytea-quantum-substrate"
-version: 0.1.1
+version: 0.1.2
 date-released: 2026-05-19
 keywords:
   - quantum-information
@@ -27,5 +27,5 @@ preferred-citation:
     - family-names: Chen
       given-names: Jiaxuan
   year: 2026
-  version: 0.1.1
+  version: 0.1.2
   url: "https://github.com/Adonyth/omytea-quantum-substrate"
