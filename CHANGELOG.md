@@ -6,6 +6,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/) and this 
 
 ## [Unreleased]
 
+## [0.1.1] — 2026-05-19
+
+### Added (CI only — no API changes vs 0.1.0)
+
+- `.github/workflows/ci.yml` `publish` job with PyPI **Trusted Publishing** (OIDC). Future tag pushes auto-publish to PyPI without any API tokens.
+
+### Notes
+
+This is the **first version published to PyPI**. v0.1.0 was tagged on GitHub before the Trusted-Publishing workflow was committed, so it ships only via the GitHub release page (wheel + sdist attached there). v0.1.1 is functionally identical to v0.1.0 — same module surface, same tests, same dependencies. Use `pip install omytea-quantum-substrate` from now on.
+
 ## [0.1.0] — 2026-05-19
 
 ### Added — initial public release

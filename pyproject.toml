@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "omytea-quantum-substrate"
-version = "0.1.0"
+version = "0.1.1"
 description = "Quantum-information substrate for the Omytea world-model system: WaveFunction · DensityMatrix · JointWaveFunction · LindbladOperator. Pure-Python stdlib."
 readme = "README.md"
 requires-python = ">=3.11"
