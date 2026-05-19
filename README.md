@@ -4,6 +4,7 @@
 [![Python](https://img.shields.io/pypi/pyversions/omytea-quantum-substrate.svg)](https://pypi.org/project/omytea-quantum-substrate/)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
 [![CI](https://github.com/Adonyth/omytea-quantum-substrate/actions/workflows/ci.yml/badge.svg)](https://github.com/Adonyth/omytea-quantum-substrate/actions/workflows/ci.yml)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20293619.svg)](https://doi.org/10.5281/zenodo.20293619)
 
 Quantum-information substrate for the **Omytea world-model system**. Stdlib + NumPy only — no SciPy, no Torch, no JAX, no GPU. Apache 2.0.
 
@@ -134,13 +135,17 @@ If you use the substrate in research, please cite it via the [`CITATION.cff`](CI
 
 ```bibtex
 @software{omytea_quantum_substrate_2026,
-  author = {Chen, Jiaxuan},
-  title  = {Omytea Quantum Substrate: Open-System World-Model Math Core},
-  year   = {2026},
-  url    = {https://github.com/Adonyth/omytea-quantum-substrate},
-  version = {0.1.0},
+  author    = {Chen, Jiaxuan},
+  title     = {Omytea Quantum Substrate: Open-System World-Model Math Core},
+  year      = {2026},
+  publisher = {Zenodo},
+  version   = {0.1.2},
+  doi       = {10.5281/zenodo.20293619},
+  url       = {https://doi.org/10.5281/zenodo.20293619},
 }
 ```
+
+The DOI [`10.5281/zenodo.20293619`](https://doi.org/10.5281/zenodo.20293619) is the **concept DOI** — it resolves to the latest archived version (currently v0.1.2). Each individual version also gets its own DOI on the Zenodo page; pin to one if your work requires version-locked reproducibility.
 
 The companion paper *Omytea Video World Console — Quantum-Operator Evolution over Streaming Belief States* (draft v0.1) lives in the Personal Future Console repo at [`docs/papers/OMYTEA_VIDEO_CONSOLE_DRAFT.md`](https://github.com/Adonyth/omytea-personal-console/blob/main/docs/papers/OMYTEA_VIDEO_CONSOLE_DRAFT.md).
 
