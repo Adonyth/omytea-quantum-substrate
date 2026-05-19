@@ -1,0 +1,103 @@
+[build-system]
+requires = ["hatchling>=1.18"]
+build-backend = "hatchling.build"
+
+
+[project]
+name = "omytea-quantum-substrate"
+version = "0.1.0"
+description = "Quantum-information substrate for the Omytea world-model system: WaveFunction · DensityMatrix · JointWaveFunction · LindbladOperator. Pure-Python stdlib."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Chen Jiaxuan", email = "lewxam0102@gmail.com" },
+]
+keywords = [
+    "quantum-information",
+    "world-model",
+    "lindblad",
+    "density-matrix",
+    "open-system",
+    "calibrated-prediction",
+    "decoherence",
+    "joint-wavefunction",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Typing :: Typed",
+]
+
+# Runtime deps: stdlib + NumPy. NumPy is used by the stochastic resample
+# + roughening paths (quantum.py) and by the default OperatorContext rng.
+# We deliberately do NOT pull in SciPy / Torch / JAX — substrate stays a
+# pure-CPU pure-Python-plus-NumPy library installable in any environment.
+dependencies = [
+    "numpy>=1.24,<3.0",
+]
+
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.0,<9.0",
+]
+dev = [
+    "pytest>=7.0,<9.0",
+    "ruff>=0.4,<1.0",
+    "build>=1.0,<2.0",
+    "twine>=5.0,<7.0",
+]
+
+
+[project.urls]
+Homepage = "https://github.com/Adonyth/omytea-quantum-substrate"
+Repository = "https://github.com/Adonyth/omytea-quantum-substrate"
+Issues = "https://github.com/Adonyth/omytea-quantum-substrate/issues"
+Changelog = "https://github.com/Adonyth/omytea-quantum-substrate/blob/main/CHANGELOG.md"
+"Companion Product" = "https://github.com/Adonyth/omytea-personal-console"
+"Live Demo" = "https://omytea-personal-console.streamlit.app"
+
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/omytea"]
+
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/src",
+    "/tests",
+    "/examples",
+    "/README.md",
+    "/LICENSE",
+    "/CHANGELOG.md",
+    "/CITATION.cff",
+    "/pyproject.toml",
+]
+
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-q --strict-markers"
+
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B"]
+ignore = [
+    "E501",  # line length — we use line-length above
+]

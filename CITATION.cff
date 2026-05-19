@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Omytea Quantum Substrate: Open-System World-Model Math Core"
+authors:
+  - family-names: Chen
+    given-names: Jiaxuan
+    email: lewxam0102@gmail.com
+type: software
+license: Apache-2.0
+repository-code: "https://github.com/Adonyth/omytea-quantum-substrate"
+url: "https://github.com/Adonyth/omytea-quantum-substrate"
+version: 0.1.0
+date-released: 2026-05-19
+keywords:
+  - quantum-information
+  - world-model
+  - lindblad
+  - density-matrix
+  - open-system
+  - calibrated-prediction
+  - decoherence
+  - joint-wavefunction
+preferred-citation:
+  type: software
+  title: "Omytea Quantum Substrate: Open-System World-Model Math Core"
+  authors:
+    - family-names: Chen
+      given-names: Jiaxuan
+  year: 2026
+  version: 0.1.0
+  url: "https://github.com/Adonyth/omytea-quantum-substrate"
